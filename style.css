@@ -1,0 +1,176 @@
+:root {
+  --primary: #222c3c;
+  --accent: #3673b8;
+  --bg: #f5f7fa;
+  --text: #222c3c;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+.stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg); /* Décale l’élément pour centrer son milieu */
+  border: 3px solid var(--accent);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 6px #0002;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  background: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  z-index: 1000;
+ 
+}
+
+
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 650px;
+  margin: 48px auto;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #0001;
+  padding: 32px 28px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.competences-list {
+  display: grid;
+  gap: 24px;
+}
+
+.competences {
+  background: var(--bg);
+  border-left: 4px solid var(--accent);
+  padding: 18px 18px 14px 22px;
+  border-radius: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+input, textarea {
+  font-size: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 9px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--primary);
+}
+
+footer {
+  text-align: center;
+  margin: 45px 0 10px 0;
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 2px 16px #2222;
+}
+.photo-gasq {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 2px 16px #2222;
+}
+#A-propos, #competences, #contact {
+  scroll-margin-top: 80px;
+}
+
+
+@media (max-width: 740px) {
+  header, main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  main {
+    padding: 22px 10px;
+  }
+}
