@@ -14,13 +14,19 @@ body {
   padding: 0;
 }
 
+.profil-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  position: relative;
+  width: 100%;
+}
+
 .stamp {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-10deg); /* Décale l’élément pour centrer son milieu */
-  border: 3px solid var(--accent);
+  margin-top: -1.5em; /* pour chevaucher la photo légèrement par le haut */
   padding: 6px 14px;
+  border: 3px solid var(--accent);
   border-radius: 4px;
   font-weight: 700;
   font-size: 0.9rem;
@@ -30,7 +36,11 @@ body {
   letter-spacing: 2px;
   box-shadow: 2px 2px 6px #0002;
   background-color: rgba(255, 255, 255, 0.85);
+  transform: rotate(-10deg);
+  z-index: 2;
+  position: relative;
 }
+
 
 
 header {
@@ -143,17 +153,19 @@ footer {
   color: var(--primary);
 }
 .photo-profil {
-  width: 200px;
-  height: 200px;
+  width: 33vw;
+  max-width: 200px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 24px auto;
   box-shadow: 0 2px 16px #2222;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
 }
 .photo-gasq {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -165,12 +177,57 @@ footer {
 }
 
 
-@media (max-width: 740px) {
-  header, main {
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 1024px) {
+  .competences-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
   }
   main {
-    padding: 22px 10px;
+    width: 95vw;
+    padding: 2em 1em;
+  }
+  .logo {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 740px) {
+  header, main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .logo {
+    font-size: 1.1em;
+  }
+  nav ul {
+    gap: 0.7em;
+  }
+  .competences-list {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .photo-profil {
+    width: 60vw;
+    max-width: 150px;
+  }
+  .stamp {
+    margin-top: -1em;
+    font-size: 0.75em;
+    padding: 4px 10px;
+    transform: none;
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .stamp {
+    font-size: 0.75em;
+    padding: 4px 7px;
+  }
+  .logo {
+    font-size: 0.9em;
+  }
+  main {
+    padding: 1.2em 0.4em;
   }
 }
