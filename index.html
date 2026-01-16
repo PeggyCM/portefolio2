@@ -3,69 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Peggy COMBEAU-MANSOUR</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Portfolio | Peggy COMBEAU-MANSOUR - Testeuse QA ISTQB</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
+    <div class="hero">
+      <h1>Peggy COMBEAU-MANSOUR</h1>
+      <p class="title">Testeuse fonctionnelle / RGAA – ISTQB Foundation</p>
+      <div class="istqb-badge" aria-label="Certification ISTQB Foundation 92,5% en 2025">
+        ISTQB Foundation (92,5%)
+      </div>
+    </div>
     
-    <div class="logo">Peggy COMBEAU-MANSOUR</div>
-    <nav>
+    <div class="contact-info">
+      <a href="tel:+33652911780">06 52 91 17 80</a>
+      <a href="mailto:pcombeaumansour@gmail.com">pcombeaumansour@gmail.com</a>
+      <span>Sainte-Foy-lès-Lyon</span>
+    </div>
+
+    <nav aria-label="Navigation principale">
       <ul>
-        <li><a href="#A-propos">A propos</a></li>
+        <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
+        <li><a href="#experiences">Expériences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section id="A-propos">
-  <div class="profil-center-wrapper">
-    <img src="peggy.png" alt="Portrait Peggy COMBEAU-MANSOUR" class="photo-profil">
-    <div class="stamp">open to work</div>
-  </div>
-  <h1>Testeuse Fonctionnel - QA</h1>
-  <p>Passionnée par la recherche de la qualité, je veux contribuer à créer des produits fiables, utiles et agréables à utiliser.</p>
-  <img src="gasq.png" alt="Certificat ISTQB" class="photo-gasq">
-</section>
-    <br>
+    <section id="apropos" class="profil-center">
+      <img src="peggy.png" 
+           alt="Portrait professionnel de Peggy COMBEAU-MANSOUR, testeuse Fonctionnel et RGAA certifiée ISTQB" 
+           class="photo-profil">
+      
+      <h2>Engagée pour un numérique de qualité accessible à tous</h2>
+      
+      <p>
+        <strong>10+ ans d'expérience dans les tests</strong> | <strong>Maîtrise MIAGE 1997</strong> | 
+        <strong>ISTQB Foundation 92,5%</strong> | <strong>Disponible immédiatement</strong>
+      </p>
+    </section>
+
     <section id="competences">
-      <h2>Compétences</h2>
-      <div class="competences-list">
-        <div class="competences">
-          <h3>Gestion de tests</h3>
-          <p><ul><li>Création d'un environnement de test d'intégration : JCL, environnement IBM/MVS, gestion sous excel.</li>
-           <br><li>Tests de non régression : gestion sous Test director, Squash TM et Soapui, méthode Agile.</li>
-            <br><li>Homologations dans les risques bancaires : environnement IBM/MVS, gestion sous Test director.</li>
-            <br><li>Création d'une base de test : Ubuntu, site web, gestion sous Jira/Xray et Kualitee</li></ul></p>
-        </div>
-        <div class="competences">
-          <h3>Développement</h3>
-          <p><ul><li>Programmation Cobol pour des projets An2000 et migration de données.</li><br>
-            <li>Portefolios en html, css, et javascript.</li><br>
-            <li>Certificat codeur master de Citizen Code</li></ul></p>
-        </div>
-        <div class="competences">
-          <h3>Automatisation de tests</h3>
-          <p><ul><li>Automatisation des tests d'un site de e-commerce (formation): selenium, pytest, robot framework, docker, gestion sous excel.</li>
-            <br><li>Tests d'Api d'un site de e-commerce (formation) : Postman, Soapui, Testcomplete</li></ul></p>
-        </div>
+      <h2>Compétences techniques</h2>
+      
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Systèmes</h3>
+          <ul>
+            <li>Linux (Fedora/Ubuntu)</li>
+            <li>Windows</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Test Management</h3>
+          <ul>
+            <li>Jira/Xray</li>
+            <li>Squash TM</li>
+            <li>Test director</li>
+            <li>Kualitee</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Automatisation & API</h3>
+          <ul>
+            <li><strong>UI :</strong> Selenium, Robot Framework</li>
+            <li><strong>API :</strong> Postman, SoapUI</li>
+            <li><strong>Conteneur :</strong> Docker, virtual box</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Langages</h3>
+          <ul>
+            <li><strong>Code :</strong> Python, COBOL, SQL</li>
+            <li><strong>Web :</strong> HTML/CSS</li>
+            <li><strong>Ordonnancement :</strong> JCL</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Esprit d'analyse</li>
+            <li>Attention au détail</li>
+            <li>Résolution de problèmes</li>
+            <li>Organisation</li>
+            <li>Communication</li>
+            <li>Adaptabilité</li>
+          </ul>
+        </article>
       </div>
     </section>
-    <br><br>
+
+    <section id="experiences">
+      <h2>Expériences professionnelles</h2>
+      
+      <article class="experience-card">
+        <div class="experience-date">Nov 2025 - Jan 2026</div>
+        <h3>Stage Testeuse fonctionnelle – CIRIDD, Saint-Etienne</h3>
+        <ul>
+          <li><strong>300+ cas de test</strong> rédigés et exécutés</li>
+          <li><strong>150+ anomalies critiques</strong> signalées</li>
+          <li>Jira/Xray configuré pour <strong>100% traçabilité</strong></li>
+          <li>Tests d'<strong>accessibilité RGAA-compliant</strong></li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-date">2006 - 2009</div>
+        <h3>Responsable qualité applicatif – GFI (Société Générale)</h3>
+        <ul>
+          <li><strong>Coordination équipe de 5 testeurs</strong></li>
+          <li><strong>10+ évolutions réglementaires</strong> risques bancaires</li>
+          <li><strong>-30% délai traitement</strong> anomalies</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-date">2001 - 2006</div>
+        <h3>Testeuse – BTD Consulting (Société Générale, Gestitres)</h3>
+        <ul>
+          <li>TNR, tests exploratoires, tests système</li>
+          <li>Test Director, environnements IBM/MVS</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-date">2000 - 2001</div>
+        <h3>Testeuse & Développeuse – CS SI</h3>
+        <ul>
+          <li><strong>Coordination équipe 4-5 testeurs</strong></li>
+          <li>Migration SI COBOL (AGF, Allianz)</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-date">1998 - 1999</div>
+        <h3>Testeuse technique – CS SI</h3>
+        <ul>
+          <li><strong>Coordination équipe 5 testeurs</strong></li>
+          <li>Création d'un environnement de tests pour Y2K, 30+ jobs ordonnancés</li>
+          <li>100+ TNR créés et exécutés, outils de suivi créés</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-date">1998 - 1999</div>
+        <h3>Développeuse – CS SI</h3>
+        <ul>
+          <li>Adaptation programmes COBOL pour Y2K</li>
+        </ul>
+      </article>
+    </section>
+
     <section id="contact">
-     <h2>Contact</h2>   
-     <div>
-        <p><ul><li>06 52 91 17 80</li>
-           <br><li>pcombeaumansour@gmail.com</li>
-            <br><li>Mobile sur le secteur Lyon/Saint-Etienne/Roanne</li>
-        </div>
+      <h2>Contact</h2>
+      <div style="text-align: center; padding: clamp(1.5rem, 6vw, 3rem) 0;">
+        <p style="font-size: clamp(1.2rem, 5vw, 1.5rem); font-weight: 700; margin: 0 0 1.5rem 0;">
+          Disponible immédiatement
+        </p>
+        <p style="font-size: clamp(1.1rem, 4vw, 1.4rem); line-height: 1.8;">
+          <a href="tel:+33652911780">06 52 91 17 80</a><br>
+          <a href="mailto:pcombeaumansour@gmail.com">pcombeaumansour@gmail.com</a>
+        </p>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Peggy COMBEAU-MANSOUR</p>
-  </footer>
-  
 </body>
 </html>
